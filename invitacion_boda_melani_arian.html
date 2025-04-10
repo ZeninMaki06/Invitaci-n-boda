@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melani & Arian - Invitación de Boda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Allura', cursive;
+      background: linear-gradient(to bottom, #87CEEB, #7FFFD4, #00BFFF, #AEC6CF, #CCCCFF);
+      color: #073c5c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .invitation {
+      background-color: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      text-align: center;
+      margin: 40px;
+    }
+    .names {
+      font-size: 4rem;
+      margin: 10px 0;
+      color: #043d63;
+    }
+    .date-time, .location {
+      font-size: 1.8rem;
+      margin: 10px 0;
+    }
+    .rules {
+      text-align: left;
+      font-size: 1.2rem;
+      background-color: #f2faff;
+      border-left: 4px solid #5ba4d0;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .icons img {
+      width: 80px;
+      height: auto;
+    }
+    .form-section {
+      margin-top: 40px;
+      text-align: left;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    label {
+      font-size: 1.1rem;
+    }
+    input[type="text"], textarea {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: sans-serif;
+      font-size: 1rem;
+    }
+    input[type="checkbox"] {
+      transform: scale(1.3);
+      margin-right: 10px;
+    }
+    button {
+      background-color: #00BFFF;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .footer {
+      margin-top: 30px;
+      font-style: italic;
+      color: #336e8c;
+    }
+  </style>
+</head>
+<body>
+  <div class="invitation">
+    <div class="icons">
+      <img src="https://img.icons8.com/ios/100/hearts.png" alt="Corazón">
+      <img src="https://img.icons8.com/ios/100/love-letter.png" alt="Carta de amor">
+      <img src="https://img.icons8.com/ios/100/romance.png" alt="Pareja">
+    </div>
+    <div class="names">Melani & Arian</div>
+    <div class="date-time">15 de septiembre de 2025 a las 3:30 PM</div>
+    <div class="location">Lugar por confirmar</div>
+    <div class="rules">
+      <p>• Evento exclusivo para invitados: por favor no traer niños ni acompañantes no incluidos en la invitación.</p>
+      <p>• La novia será la única en blanco. Se sugiere vestir en tonos de azul claro o neutros que no se asemejen al blanco.</p>
+      <p>• Les pedimos evitar propuestas matrimoniales durante nuestra celebración.</p>
+      <p>• No se sientan obligados a traer regalos, su presencia es nuestro mayor regalo.</p>
+    </div>
+    <div class="form-section">
+      <h3>¿Podrás acompañarnos?</h3>
+      <form>
+        <label>
+          <input type="checkbox" required>
+          He leído y acepto las normas del evento.
+        </label>
+        <label for="justificacion">Si no puedes asistir, por favor déjanos saber el motivo:</label>
+        <textarea id="justificacion" name="justificacion" rows="4" placeholder="Tu mensaje aquí..."></textarea>
+        <button type="submit">Enviar confirmación</button>
+      </form>
+    </div>
+    <div class="footer">
+      ¡Esperamos compartir este día tan especial contigo!
+    </div>
+  </div>
+</body>
+</html>
